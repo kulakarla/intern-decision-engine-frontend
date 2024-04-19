@@ -38,13 +38,9 @@ class _LoanFormState extends State<LoanForm> {
         int tempAmount = int.parse(result['loanAmount'].toString());
         int tempPeriod = int.parse(result['loanPeriod'].toString());
 
-        if (tempAmount <= _loanAmount || tempPeriod > _loanPeriod) {
-          _loanAmountResult = int.parse(result['loanAmount'].toString());
-          _loanPeriodResult = int.parse(result['loanPeriod'].toString());
-        } else {
-          _loanAmountResult = _loanAmount;
-          _loanPeriodResult = _loanPeriod;
-        }
+        _loanAmountResult = tempAmount;
+        _loanPeriodResult = tempPeriod;
+
         _errorMessage = result['errorMessage'].toString();
       });
     } else {
