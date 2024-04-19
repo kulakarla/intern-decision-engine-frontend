@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../colors.dart';
+import '../theme/colors.dart';
 
 // A custom text form field widget for national ID input
 class NationalIdTextFormField extends StatelessWidget {

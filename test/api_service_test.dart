@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
-import 'package:inbank_frontend/api_service.dart';
+import 'package:inbank_frontend/service/api_service.dart';
 import 'package:test/test.dart';
 
 void main() {

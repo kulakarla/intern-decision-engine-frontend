@@ -3,9 +3,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:inbank_frontend/colors.dart';
-import 'package:inbank_frontend/fonts.dart';
-import 'package:inbank_frontend/slider_style.dart';
+import 'package:inbank_frontend/theme/colors.dart';
+import 'package:inbank_frontend/theme/fonts.dart';
+import 'package:inbank_frontend/theme/slider_style.dart';
 import 'package:inbank_frontend/widgets/loan_form.dart';
 
 // The main function runs the app and shows the `InBankForm` widget.
