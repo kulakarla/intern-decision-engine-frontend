@@ -167,18 +167,63 @@ class _LoanFormState extends State<LoanForm> {
               ),
             ),
           ),
+          // const SizedBox(height: 16.0),
+          // Column(
+          //   children: [
+          //     Text(
+          //         'Approved Loan Amount: ${_loanAmountResult != 0 ? _loanAmountResult : "--"} €'),
+          //     const SizedBox(height: 8.0),
+          //     Text(
+          //         'Approved Loan Period: ${_loanPeriodResult != 0 ? _loanPeriodResult : "--"} months'),
+          //     Visibility(
+          //         visible: _errorMessage != '',
+          //         child: Text(_errorMessage, style: errorMedium))
+          //   ],
+          // ),
           const SizedBox(height: 16.0),
-          Column(
-            children: [
-              Text(
-                  'Approved Loan Amount: ${_loanAmountResult != 0 ? _loanAmountResult : "--"} €'),
-              const SizedBox(height: 8.0),
-              Text(
-                  'Approved Loan Period: ${_loanPeriodResult != 0 ? _loanPeriodResult : "--"} months'),
-              Visibility(
-                  visible: _errorMessage != '',
-                  child: Text(_errorMessage, style: errorMedium))
-            ],
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.primaryColor.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: AppColors.secondaryColor),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 1,
+                  blurRadius: 1,
+                  offset: Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                Text(
+                  'Approved Loan Amount: ${_loanAmountResult != 0 ? _loanAmountResult : "--"} €',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.secondaryColor,
+                  ),
+                ),
+                const SizedBox(height: 8.0),
+                Text(
+                  'Approved Loan Period: ${_loanPeriodResult != 0 ? _loanPeriodResult : "--"} months',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.secondaryColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Visibility(
+            visible: _errorMessage != '',
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(_errorMessage, style: errorMedium),
+            ),
           ),
         ],
       ),
