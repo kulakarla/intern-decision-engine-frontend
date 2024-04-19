@@ -167,19 +167,7 @@ class _LoanFormState extends State<LoanForm> {
               ),
             ),
           ),
-          // const SizedBox(height: 16.0),
-          // Column(
-          //   children: [
-          //     Text(
-          //         'Approved Loan Amount: ${_loanAmountResult != 0 ? _loanAmountResult : "--"} €'),
-          //     const SizedBox(height: 8.0),
-          //     Text(
-          //         'Approved Loan Period: ${_loanPeriodResult != 0 ? _loanPeriodResult : "--"} months'),
-          //     Visibility(
-          //         visible: _errorMessage != '',
-          //         child: Text(_errorMessage, style: errorMedium))
-          //   ],
-          // ),
+
           const SizedBox(height: 16.0),
           Container(
             padding: const EdgeInsets.all(10),
